@@ -1,6 +1,8 @@
 body{
     background-color: #f1f1f1;
-
+font-family: sans-serif;
+display: flex;
+justify-content: center;
 
 
 
@@ -26,5 +28,37 @@ gap: 20px;
 }
 
 .item{
-    
+width: 200px;
+height: 320px;
+margin-bottom: 10px;
+
+border: 1px solid rgb(194, 194, 194);
+border-radius: 5px;
+box-shadow: 0 0 7px  rgba(0, 0, 0, 0.3);
+}
+
+.title{
+background-color: rgb(253, 48, 48);
+width: auto;
+color: white;
+padding: 10px;
+border-radius: 5px;
+font-size: 20px;
+text-transform: uppercase;
+text-align: center;
+font-weight: bold;  
+letter-spacing: 3px;
+}
+
+.contacts p {
+    margin: 3px;
+
+}
+
+.contacts p:first-child{
+font-weight: bold;
+}
+
+.contacts p:last-child{
+border-left: 3px;
 }
