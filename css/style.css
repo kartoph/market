@@ -1,154 +1,135 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1, 100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-body{
+body {
+    font-family: sans-serif;
     background-color: #f1f1f1;
-font-family: sans-serif;
-display: flex;
-justify-content: center;
-
-margin: 0;
-padding: 0;
-
-}
-
-content{
-    width: 420px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  content {
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-}
-
-div{
-    border: 1px solid darkgray;
-}
-
-.items{
-padding: 10px;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  .title {
+    background: rgb(235, 48, 48);
+    color: white;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  .items {
     display: flex;
-display: flex;
-gap: 20px;
-}
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .item {
+    width: 200px;
+    height: 420px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.item{
-width: 200px;
-height: 400px;
-margin-bottom: 10px;
-padding: 10px;
+  .item img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
 
-border: 1px solid rgb(194, 194, 194);
-border-radius: 5px;
-box-shadow: 0 0 7px  rgba(0, 0, 0, 0.3);
-}
+  .item-details {
+    text-align: right;
+  }
 
-.title{
-background-color: rgb(253, 48, 48);
-width: auto;
-color: white;
-padding: 10px;
-border-radius: 5px;
-font-size: 20px;
-text-transform: uppercase;
-text-align: center;
-font-weight: bold;  
-letter-spacing: 3px;
-}
-
-.contacts p {
-    margin: 3px;
-
-}
-
-.contacts p:first-child{
-font-weight: bold;
-}
-
-.contacts p:last-child{
-border-left: 3px;
-}
-
-.license{
-    font-size: 9px;
-    text-align: justify;
-    color: rgb(120, 120, 120);
-}
-
-.item-title{
-font-weight: bold;
-}
-
-.item-image{
-    height: 200px;
-}
-.parts-pay{
-    margin-top: 30px;
+  .parts-pay {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
-}
+    gap: 5px;
+    font-size: 20px;
+    
+  }
 
-.parts-pay img {
-height: 24px;
-
-}
-
-.price{
-border: 1px solid rgb(194, 194, 194);
-border-radius: 5px;
-padding: 5px 10px;
-display: flex;
-}
-
-.price:first-child{
-    width: 100px;
-font-size: 20px;
-}
-
-.price div:first-child{
- text-decoration-line: line-through;
-}
-
-.price div:first-child sup {
-    font-size: 12px;
- }
-
-
-     .price div:last-child {
-        font-size: 24px;
-     }
-
- .bonus{
-    background: rgb(253, 48, 48);
-    color: white;
-    border-radius: 5px; 
+  .price {
     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
     align-items: center;
- }
+    border: 1px solid darkgray;
+  }
 
- .bonus div:first-child{
-    width: 100px;
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
     font-size: 14px;
- }
+  }
 
- .bonus div:last-child{
-    font-size: 24px;
- }
-
- .bonus div:last-child sup {
-    font-size: 14px;
- }
-
- .contacts p:first-child{
+  .current-price {
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1px;
- }
-    .contacts p:last-child{
-border-left: 3px solid rgb(253, 48, 48);
-    }
+    color: black;
+  }
 
-    .info{
-        font-size: 9px;
-        text-align: justify;
-        color: rgb(120, 120, 120);
-    }
+  .price-bonus {
+    background-color: rgb(235, 48, 48);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid darkgray;
+  }
+
+  .price-bonus span {
+    font-size: 18px;
+  }
+
+  .contacts p {
+    margin: 3px;
+  }
+
+  .contacts p:first-child {
+    font-weight: bold;
+  }
+
+  .contacts p:last-child {
+    border-left: 3px solid rgb(235, 48, 48);
+    padding-left: 5px;
+  }
+
+  .license {
+    font-size: 9px;
+    text-align: justify;
+    color: rgb(120, 120, 120);
+  }
+
+  .item img {
+    width: 170px;
+    height: auto;
+    margin: 10px 0;
+}
