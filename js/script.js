@@ -1,19 +1,27 @@
-// try to connect to tthe file script.js
+// try to connect to the file script.js
 console.log("script.js loaded");
-// get elements by id
-let itemsDiv = document.getElementById("items");
 
+let itemsArray = [
+    'Газоноскосарка 43',
+    'Електричний тример 110',
+    'Акамуляторна газонокосарка 32',
+    'Акумуляторний оприскувач 12 N',
+];
+
+let itemsDiv = document.getElementById("items");
 // check if the element is found
 if (itemsDiv) {
-    console.log(itemsDiv);
-    console.log('Поле classList:', itemsDiv.classList);
-    console.log('Поле id:', itemsDiv.id);
-    console.log('Поле clientWidth:', itemsDiv.clientWidth);
-    console.log('Поле innerHTML:', itemsDiv.innerHTML);
-    itemsDiv.innerHTML = 'Hello world!';
-    itemsDiv.innerHTML = '2 Hello world!';
+    itemsArray.forEach((item, index) => {
+        itemsDiv.innerHTML += `<div class="item">
+        <h2>Товар №${index + 1} з ${itemsArray.length}</h2>
+        <p>${item}</p>
+        </div>`; 
+    });
 } else {
     console.log("Element with id 'items' not found.");
 }
-//get founded element
-console.log(itemsDiv);
+
+itemsArray = itemsArray.sort();
+itemsArray.forEach((item, index) => {
+    console.log(item);
+});
